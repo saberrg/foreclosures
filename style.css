@@ -1,0 +1,46 @@
+/* style.css */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#header {
+    background-color: #40E000;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 200px;
+}
+/* #map { 
+    height: 90vh; 
+} */
+
+#map { 
+    height: calc(100vh - 50px); /* Adjust 50px to the collapsed height of your header */
+    transition: height 0.5s ease-in-out;
+}
+
+.portal-link {
+    color: white;
+    font-style: italic;
+}
+#toggle-arrow {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+.collapsed {
+    max-height: 3px;
+}
+.collapsed #toggle-arrow {
+    transform: translateX(-50%) rotate(180deg);
+}

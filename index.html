@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chicago Foreclosures Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" /> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div id="header">
+        <h1>Chicago Foreclosures Map</h1>
+        <p>Explore foreclosed properties in Chicago.</p>
+        <a href="https://data.cityofchicago.org/Community-Economic-Development/Foreclosed-Rental-Property/yhcw-iu53/about_data" class="portal-link" target="_blank">Chicago Data Portal: Foreclosed Rental Property</a>
+        <div id="toggle-arrow" onclick="toggleHeader()">&#9650;</div>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="app.js"></script> <!-- Reference the updated app.js -->
+</body>
+</html>
